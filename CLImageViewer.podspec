@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.author       = { "esrever10" => "caochen@cloudist.cc" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "7.0"
-  s.source       = { :git => "https://github.com/Cloudist/CLImageViewer", :tag => s.version}
-  s.source_files  = 'CLImageViewer/*.{h,m},CLImageViewer/SDWebImage/*.{h,m}'
+  s.source       = { :git => "https://github.com/Cloudist/CLImageViewer.git", :tag => "1.0.0"}
+  s.source_files  = 'CLImageViewer/*.{m,h},CLImageViewer/SDWebImage/*.{m,h}'
   s.requires_arc = true
 end
+
