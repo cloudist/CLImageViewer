@@ -132,7 +132,7 @@
                             
                              NSUInteger page = weakSelf.imageInfo.startImageIndex;
                              [weakSelf.imageViews[page] addSubImageview:weakSelf.popView];
-                             [self loadScrollViewWithPage:page];
+                             [weakSelf loadScrollViewWithPage:page];
                          }];
     }];
 }

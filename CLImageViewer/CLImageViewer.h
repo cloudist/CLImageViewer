@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CLImageInfo.h"
 @interface CLImageViewer : UIViewController
-@property (nonatomic, strong) CLImageInfo* imageInfo;
-@property (nonatomic, weak) UIViewController* fromController;
+@property (strong, nonatomic) CLImageInfo* imageInfo;
+@property (weak, nonatomic) UIViewController* fromController;
 
 - (void)showImageViewFromOriginPosition;
 
