@@ -31,9 +31,9 @@ Usage is simple. Here's what your simplest implementation might look like:
         CLImageInfo* imagesInfo = [CLImageInfo new];
         imagesInfo.imageURLs = imageUrls;
         imagesInfo.placeholderImages = placeHoldeImages;
-        imagesInfo.referenceView = weakCell;
+        imagesInfo.referenceView = referenceView;
         imagesInfo.referenceRects = referenceRects;
-        imagesInfo.startImageIndex = index;
+        imagesInfo.startImageIndex = imageIndex;
         
         imagesViewer.imageInfo = imagesInfo;
         imagesViewer.fromController = weakSelf;
