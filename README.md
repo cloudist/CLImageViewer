@@ -6,6 +6,6 @@
 支持网络图片及本地图片浏览。  
 支持图片双击放大，拉伸放大等操作方式。  
 
-![](/demogif/example1.gif)  
+![](demogif/example1.gif)  
 
-![](/demogif/example2.gif)  
+![](demogif/example2.gif)  
