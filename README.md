@@ -4,7 +4,7 @@ CLImageViewer
 A light weight, easy to use and cool image viewer for iOS.  
 It provides:  
 
-- Local and web images sliding around to browse.  
+- Support both local and web image.  
 - Double tap and pinch to zoom, single tap to dismiss.  
 - Support two kinds of animation to dismiss image back to the original location.  
 
