@@ -26,7 +26,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _imageDataSource = [NSMutableArray new];
     for (NSUInteger i = 1; i < 12; ++i) {
-        UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"%u", i]];
+        UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"%lu", (unsigned long)i]];
         [_imageDataSource addObject:image];
     }
 }
@@ -60,8 +60,8 @@
         NSMutableArray* placeHoldeImages = [NSMutableArray new];
         NSMutableArray* referenceRects = [NSMutableArray new];
         
-        for (NSUInteger i = 0; i < _imageDataSource.count; ++i) {
-            UIImage* image = _imageDataSource[i];
+        for (NSUInteger i = 0; i < weakSelf.imageDataSource.count; ++i) {
+            UIImage* image = weakSelf.imageDataSource[i];
             [placeHoldeImages addObject:image];
         }
         [referenceRects addObject:[NSValue valueWithCGRect:weakCell.imageView0.frame]];

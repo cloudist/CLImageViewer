@@ -179,8 +179,8 @@
                       placeholderImage:image
                              completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                                  weakSelf.spinner.alpha = 0.f;
-                                 if (self.zoomScale <= self.minimumZoomScale) {
-                                     [self addSubImageview:_imageView];
+                                 if (weakSelf.zoomScale <= weakSelf.minimumZoomScale) {
+                                     [weakSelf addSubImageview:_imageView];
                                  }
                                  
                              }];
