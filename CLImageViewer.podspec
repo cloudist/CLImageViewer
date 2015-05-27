@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "7.0"
   s.source       = { :git => "https://github.com/Cloudist/CLImageViewer.git", :tag => "1.0.0"}
-  s.source_files  = 'CLImageViewer/*.{m,h}'
+  s.source_files  = 'CLImageViewer/*.{m,h},CLImageViewer/SDWebImage/*.{m,h}'
   s.requires_arc = true
-  s.dependency 'SDWebImage', '~> 3.7.2'
+  s.framework = 'ImageIO', 'UIKit'
 end
 
