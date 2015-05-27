@@ -69,5 +69,4 @@ There are two ways to use CLImageViewer in your project:
 - Simplify the interface  
 
 ## License
-
 MIT License, see the included file.  
