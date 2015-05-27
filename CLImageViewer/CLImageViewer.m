@@ -124,7 +124,7 @@
                                     UIViewAnimationOptionCurveEaseInOut
                          animations:^ {
                              weakSelf.blackBackdrop.alpha = 0.86f;
-                             CGSize fitSize = [weakSelf.popView contentSizeWithParentViewSize:self.view.bounds.size];
+                             CGSize fitSize = [weakSelf.popView contentSizeWithParentViewSize:weakSelf.view.bounds.size];
                              weakSelf.popView.frame = CGRectMake(0, (scrollViewHeight - fitSize.height) / 2, fitSize.width, fitSize.height);
                          }
                          completion:^(BOOL finished) {
