@@ -48,7 +48,7 @@ That's it.
 
 There are two ways to use CLImageViewer in your project:  
 
-- using Cocoapods, `pod 'CLImageViewer'`  
+- using CocoaPods, `pod 'CLImageViewer'`  
 - copying all the files into your project  
 
 ## Tips
